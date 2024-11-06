@@ -1,0 +1,198 @@
+:root {
+	/* startje */
+	--color-background:#eeeeee;
+	--standard: #f74c1d;
+    --white: #ffffff;
+	--black: #000000;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+	font-family: "Schoolbell", sans-serif;
+	text-transform: uppercase; 
+    background-image: url('../images/la-fam-heading-logo-1_2024x.png');
+
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 90%;
+    margin:0;
+  
+
+}
+
+header > img:last-of-type {
+  display: flex;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 10em;
+  margin-bottom: 15em;
+ 
+
+}
+
+main{
+    background-color: var(--white);
+}
+
+main ul li{
+    list-style:none;
+}
+
+main section:nth-of-type(1){
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+}
+
+main section:nth-of-type(1) a {
+    display:flex;
+    flex-direction: column;
+    border-top:solid 0.09em;
+    border-right:solid 0.09em;
+	border-color: var(--standard);
+}
+
+main section:nth-of-type(1) a img {
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+
+main section:nth-of-type(1) a:first-of-type img:hover  {
+    content: url('../images/jasachter.png');
+}
+
+main section:nth-of-type(1) a:nth-child(2) img:hover  {
+    content: url('../images/truiaan.png');
+}
+
+main section:nth-of-type(1) a:nth-child(3) img:hover  {
+    content: url('../images/hangerscheef.png');
+}
+
+main section:nth-of-type(1) a:nth-child(4) img:hover  {
+    content: url('../images/broekaan.png');
+    object-fit: cover;
+	width:100%;
+
+}
+
+
+main section:nth-of-type(1) h3{
+    border-top:solid 0.09em;
+	border-color: var(--standard);
+}
+
+main section:nth-of-type(2) a{
+    background-color:var(--standard) ;
+    color:var(--white);
+    object-fit: cover;
+}
+
+
+marquee{
+    background-color: var(--standard);
+    color:white;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size:1.2em;
+}
+
+
+
+
+
+/*styling fotos*/
+main section:nth-of-type(3) ul {
+    position:relative;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	
+	display:flex;
+	
+	overflow:hidden;
+	
+	scroll-snap-type:x mandatory;
+	scroll-behavior: smooth;
+}
+
+
+main section:nth-of-type(3) li {
+	width:50%;
+	flex-shrink:0;
+	
+	scroll-snap-align:start;
+}
+
+main section:nth-of-type(3) img {
+    object-fit: cover;
+	width:100%;
+  
+}
+
+main section:nth-of-type(3) button{
+   background-color: var(--white);
+   border:none;
+   border-radius: 50%;
+   padding:0.8em;
+   display:inline-block;
+   
+}
+
+main section:nth-of-type(3) button:nth-of-type(1){
+    display: flex;
+    position: absolute;
+
+    top:10em;
+    left:1em;
+    transform:scaleX(-1);
+}
+
+main section:nth-of-type(3) button:nth-of-type(2){
+    display: flex;
+    position: absolute;
+    
+    top:10em;
+    right:1em;
+
+}
+
+marquee:nth-of-type(2){
+    background-color: var(--white);
+    color:var(--standard);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size:1.2em;
+}
+
+video{
+    width: 100%;
+    height:auto;
+    display:block;
+    border: solid 0.09em var(--standard);
+    border-width: 0.09em 0;
+  
+}
+
+main section:nth-of-type(2){
+    position:relative;
+}
+
+main section:nth-of-type(2) a{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translateX(-50%);
+    padding:1em 3em;
+    border-radius:4em;
+}

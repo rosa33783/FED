@@ -1,0 +1,217 @@
+:root {
+	/* startje */
+	--color-background:#eeeeee;
+	--standard: #f74b1b;
+    --white: #ffffff;
+	--black: #000000;
+    --h2size:2em;
+    --clothing:0.1em;
+    --letterspace:0.15em;
+    --klarna:#ECECEC;
+}
+
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+li {
+    list-style: none;
+}
+
+main section:nth-of-type(1) ul {
+	margin-top:3em;
+	padding:0;
+	list-style-type:none;
+	
+	display:flex;
+	
+	overflow:hidden;
+	
+	scroll-snap-type:x mandatory;
+	scroll-behavior: smooth;
+    width:100%;
+}
+
+
+main section:nth-of-type(1) ul li {
+    border-bottom:solid 0.09em;
+	border-color: var(--standard);
+	width:100%;
+	flex-shrink:0;
+	scroll-snap-align:start;
+}
+
+main section:nth-of-type(1) img {
+    object-fit: cover;
+	width:100%;
+  
+}
+
+main section:nth-of-type(1) button:nth-of-type(1){
+    transform:scaleX(-1); 
+}
+
+
+main section:nth-of-type(1) section{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/*denim pocket jacket en prijs*/
+main section:nth-of-type(2){
+    padding-left:1em;
+    padding-bottom: 1em;
+}
+
+main section:nth-of-type(2){
+    padding-left:1em;
+    padding-bottom: 1em;
+}
+
+
+/*klarna*/
+main section:nth-of-type(3){
+    display: flex;
+    border:1px solid var(--klarna);
+    color:var(--black);
+    padding:1em;
+    margin-left:0.5em;
+    margin-right:0.5em;
+
+}
+
+main section:nth-of-type(3) img{
+    padding-right:1em;
+}
+
+
+/*size*/
+main section:nth-of-type(4){
+    padding-top:1em;
+    padding-left: 1em;
+}
+
+main section:nth-of-type(4) ul{
+    display: flex;
+    gap:1em;
+    padding-bottom: 1em;
+}
+
+
+main section:nth-of-type(4) li button{
+    font-family: "Schoolbell", sans-serif;
+    background:none;
+    border:none;
+    text-decoration: none;
+    color:var(--standard);
+}
+
+main section:nth-of-type(4) li button:focus{
+    
+    border-bottom:solid 0.09em;
+	border-color: var(--standard);
+}
+
+/*size chart*/
+main section:nth-of-type(5){
+    border-top:solid 0.09em;
+	border-color: var(--standard);
+}
+
+
+main section:nth-of-type(5) p{
+    padding-left:1em;
+    padding-top:1em;
+
+}
+
+/*shipping, returns and payments*/    
+
+main section:nth-of-type(6){
+
+    border-bottom:solid 0.09em;
+    border-color: var(--standard);
+    }
+
+main section:nth-of-type(6) details summary{
+    padding:0.5em 0em 0.5em 1em;
+
+    border-top:solid 0.09em;
+    border-color: var(--standard);
+    }
+
+
+main section:nth-of-type(6) details p{
+    padding:0.5em 0em 0.5em 1em;
+    width:20em;
+    
+    }
+
+main section:nth-of-type(6) details li{
+    padding:0.5em 0em 0.5em 1em;
+    width:20em;
+     }
+
+main section:nth-of-type(6) details p a{
+   text-decoration: underline  var(--standard);
+
+            
+    }
+
+
+
+/*you may also like*/
+
+
+main section:nth-of-type(7){
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+}
+
+
+main section:nth-of-type(7) a {
+    display:flex;
+    flex-direction: column;
+    border-top:solid 0.09em;
+    border-right:solid 0.09em;
+	border-color: var(--standard);
+}
+
+main section:nth-of-type(7) a img {
+    display:block;
+    width:100%;
+    height:auto;
+    border-bottom:solid 0.09em;
+	border-color: var(--standard);
+}
+
+
+main section:nth-of-type(7) a:first-of-type img:hover  {
+    content: url('../images/jasachter.png');
+}
+
+main section:nth-of-type(7) a:nth-child(2) img:hover  {
+    content: url('../images/truiaan.png');
+}
+
+main section:nth-of-type(7) a:nth-child(3) img:hover  {
+    content: url('../images/hangerscheef.png');
+}
+
+main section:nth-of-type(7) a:nth-child(4) img:hover  {
+    content: url('../images/broekaan.png');
+
+}
+
+
+
+
+
+
+
+
+
